@@ -19,19 +19,18 @@ body{
 }
 .container .form{
     background: #001236;
-    background-color: #001236;
 }
 .container .form input{
     color: black;
-    padding: 12px 15px;
+    padding: 10px 14px;
     margin: auto;
-    border-radius: 10px;
+    border-radius: 4px;
     text-align: center;
     display: flex;
 }
 
 .container form label{
-    text-align: center;
+    text-align:center;
     display:flex;
     width: 150px;
     line-height: 50px;
@@ -44,7 +43,7 @@ body{
 .container form button{
     background: #F2C94C;
     color: whitesmoke;
-    border-radius: 10px;
+    border-radius: 4px;
     border: #F2C94C;
     margin: auto;
     display: flex;
@@ -65,7 +64,7 @@ body{
     color: black;
     font: bolder;
     font-weight: 70%;
-    border-radius: 9px;
+    border-radius: 4px;
     display: flex;
     font-family: "Roboto";
     background: whitesmoke;
@@ -77,4 +76,28 @@ body{
 }
 .foot button:hover{
     background: #EBCC70;
+}
+.icons{
+    padding-top: 40px;
+    display: flex;
+}
+.icons .cart{
+   /* display: flex; */
+   padding-left: 125px;
+   /* padding-top: 10px; */
+
+}
+.icons .home{
+    /* display: flex; */
+    padding-left: 45px;
+    /* padding-top: 40px; */
+}
+.icons .tag{
+    padding-left: 195px ;
+    /* display: flex; */
+}
+
+.icons .bar{
+    padding-left: 260px;
+    /* display: flex; */
 }
