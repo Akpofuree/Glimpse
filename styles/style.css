@@ -20,22 +20,21 @@ body{
 .container .form{
     background: #001236;
 }
-.container .form .line h1{
-    background: whitesmoke;
-    color: black;
-    font-family: "Roboto";
-    align-items: center;
-    text-align: center;
-    margin-left: 35rem;
-    /* margin-right:10px; */
-    font-size: larger;
-    width:40px;
-    border-radius: 50%;
-    bottom: 10px;
-}
-.container .form .line{
-    height: 1px;
+.container .form .line p{
+    height:1px;
+    width:100%;
     background: #282828;
+    display: flex;
+}
+.container .form .line p span{
+    padding: 0 10px;
+    height: 20px;
+    margin: -10px 35rem;
+    background: whitesmoke;
+    border-radius: 50%;
+    font-family: "Roboto";
+    font-size: larger;
+    display: flex;
 }
 .container .form input{
     color: black;
@@ -80,6 +79,9 @@ body{
     padding: 12px 65px;
     margin-top: 50px;
     font-family:'Roboto';
+}
+.container .form button:hover{
+    background: #f1e6c3;
 }
 form a{
     color: #f90909;
