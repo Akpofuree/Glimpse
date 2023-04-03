@@ -20,6 +20,23 @@ body{
 .container .form{
     background: #001236;
 }
+.container .form .line h1{
+    background: whitesmoke;
+    color: black;
+    font-family: "Roboto";
+    align-items: center;
+    text-align: center;
+    margin-left: 35rem;
+    /* margin-right:10px; */
+    font-size: larger;
+    width:40px;
+    border-radius: 50%;
+    bottom: 10px;
+}
+.container .form .line{
+    height: 1px;
+    background: #282828;
+}
 .container .form input{
     color: black;
     padding: 10px 14px;
@@ -32,13 +49,12 @@ body{
 .container form label{
     text-align: center;
     display:flex;
-    width: 150px;
+    align-content: center;
     line-height: 50px;
     margin:auto;
     justify-content:center;
     color: whitesmoke;
     font-family: "Roboto";
-    /* margin-left: 29rem; */
 }
 .container form .btn button{
     font-family: 'Roboto';
