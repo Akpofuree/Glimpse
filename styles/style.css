@@ -15,42 +15,64 @@ color: #EBCC70;
     font-family: "Poppins";
 }
 body{
-    width: 100%;
-    height: 100vh;
-    background: #001236 
+    background: whitesmoke;
+}
+.container .form{
+    background: #001236;
 }
 .container .form input{
     color: black;
-    padding: 12px 15px;
+    padding: 10px 14px;
     margin: auto;
-    width: 20%;
-    border-radius: 10px;
+    border-radius: 4px;
     text-align: center;
-    display: block;
+    display: flex;
 }
 
 .container form label{
     text-align: center;
-    display:block;
+    display:flex;
     width: 150px;
     line-height: 50px;
     margin:auto;
-    justify-content: center;
+    justify-content:center;
     color: whitesmoke;
     font-family: "Roboto";
+    /* margin-left: 29rem; */
 }
-
-.container form button{
+.container form .btn button{
+    font-family: 'Roboto';
     background: #F2C94C;
     color: whitesmoke;
-    border-radius: 10px;
-    border: #F2C94C;
+    display: flex;
+    border-radius: 4px;
     margin: auto;
-    display: block;
-    padding: 12px 15px;
-    width: 23%;
-    margin-top: 40px;
+    padding: 12px 95px;
+    margin-top: 50px;
+    border: #F2C94C;
+}
+.container form .btn button:hover{
+    background: #EBCC70;
+}
+.container form button {
+    color: #F2C94C;
+    background: whitesmoke;
+    border-radius: 4px;
+    border-color: #F2C94C;
+    margin: auto;
+    display: flex;
+    padding: 12px 65px;
+    margin-top: 50px;
     font-family:'Roboto';
+}
+form a{
+    color: #f90909;
+    font-family: "Roboto";
+    font-weight: bold;
+    /* padding-right: 35rem; */
+    float:right;
+    display: flex;
+    justify-content: space-between;
 }
 .foot p{
     font-family: "Roboto";
@@ -63,17 +85,16 @@ body{
 .foot button{
     border-color: #F2C94C;
     color: black;
-    width: 23%;
     font: bolder;
     font-weight: 70%;
-    border-radius: 9px;
-    display: block;
+    border-radius: 4px;
+    display: flex;
     font-family: "Roboto";
     background: whitesmoke;
-    padding: 12px 15px;
+    padding: 12px 65px;
     margin: auto;
-    margin-top: 40px;
-
+    margin-top: 30px;
+    text-align: center;
 }
 .foot button:hover{
     background: #EBCC70;

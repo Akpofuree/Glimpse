@@ -19,6 +19,7 @@ body{
 }
 .container .form{
     background: #001236;
+    border-radius: 10px;
 }
 .container .form input{
     color: black;
@@ -32,12 +33,13 @@ body{
 .container form label{
     text-align:center;
     display:flex;
-    width: 150px;
-    line-height: 50px;
+    /* margin-left: 40rem;
+    padding: 12px 30rem; */
     margin:auto;
-    justify-content: center;
+    justify-content: start;
     color: whitesmoke;
     font-family: "Roboto";
+    justify-content: center;
 }
 
 .container form button{
@@ -47,9 +49,12 @@ body{
     border: #F2C94C;
     margin: auto;
     display: flex;
-    padding: 12px 50px;
+    padding: 12px 65px;
     margin-top: 50px;
     font-family:'Roboto';
+}
+.container form button:hover{
+    background: #EBCC70;
 }
 .foot p{
     font-family: "Roboto";
@@ -76,28 +81,4 @@ body{
 }
 .foot button:hover{
     background: #EBCC70;
-}
-.icons{
-    padding-top: 40px;
-    display: flex;
-}
-.icons .cart{
-   /* display: flex; */
-   padding-left: 125px;
-   /* padding-top: 10px; */
-
-}
-.icons .home{
-    /* display: flex; */
-    padding-left: 45px;
-    /* padding-top: 40px; */
-}
-.icons .tag{
-    padding-left: 195px ;
-    /* display: flex; */
-}
-
-.icons .bar{
-    padding-left: 260px;
-    /* display: flex; */
 }

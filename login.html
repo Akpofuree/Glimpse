@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Glimpse-Login</title>
 </head>
 <body>
@@ -12,14 +12,28 @@
         <div class="form">
             <form action="#">
                 <h1>Glimpse</h1>
-                <h2>Login</h2>
+                <h2>Login</h2><br>
+                <button>Login with Google</button>
+                <p>or</p>
+                <hr><br>
                 <div>
-                    <label>Email or Phonenumber</label>
-                    <input type="number" type="email" placeholder="Input your email or phone number">
+                    <label>Email or Phone Number</label>
+                    <input type="number" type="email" placeholder="Input your email or phone number"required/><br>
+                </div>
+                <div>
+                    <label>Password</label>
+                    <input type="password" placeholder="Input password"required/><br>
+                </div>
+                <a href="#">Forgot Password?</a>
+                <div class="btn">
+                  <button>Login</button><br>  
                 </div>
             </form>
         </div>
-       
+       <div class="foot">
+            <p>Don't have an account?</p>
+            <button onclick="window.location.href='signup.html';">Create an Account</button>
+       </div>
     </div>
 </body>
 </html>
