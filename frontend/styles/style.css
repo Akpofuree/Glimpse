@@ -87,6 +87,7 @@ form a{
     float:right;
     display: flex;
     justify-content: space-between;
+    text-decoration: none;
 }
 .foot p{
     font-family: "Roboto";

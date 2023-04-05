@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Paytone One');
+*{
+  padding: 0;
+  margin:0;
+}
+body{
+  background: whitesmoke;
+}
+
+section{
+  /* position: relative; */
+ /* width: 100%;
+ min-height: 100vh; */
+ display: flex;
+ flex-direction: column;
+ /* justify-content: flex-start;
+ background-size: cover;
+ background-position: center; */
+}
+header{
+  position: relative;
+  /* top: 0; */
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  /* justify-content:flex-start; */
+  align-items: center
+}
+header h1{
+  color: #EBCC70;
+  font-family: "Poppins";
+  font-size:20px;
+  display: flex;
+}
+header h1 span{
+  display: flex;
+  height: 45px;
+  border-left: 1px solid #000900;
+  position: absolute;
+  left: 15%;
+  font-family: "Poppins";
+  color: black;
+  /* padding-left: 12px 10px; */
+}
+header .content h1{
+  color: black;
+  font-family: "Paytone One";
+}
+
+header .navigation a{
+  margin: 30px 10px;
+  color: #000;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: 0.3s;
+  transition-property: background;
+}
+ 
+header .navigation a:not(:last-child){
+  margin-right: 30px;
+ 
+}
+
+header .navigation a:hover{
+  background: #EBCC70;
+}
