@@ -4,9 +4,14 @@
 body{
   background: whitesmoke ;
 }
+*{
+  margin: 0;
+  padding: 0;
+}
 .container h1{
   font-family: "Poppins";
   color:#EECB70;
+  margin: 50px;
 }
 .container h1 span{
   font-family: "Poppins";
@@ -31,6 +36,7 @@ body{
   border-radius: 4px;
   border: #EECB70;
   padding: 12px 50px;
+  font-family: "poppins";
   /* margin: 30px; */
   /* display: flex; */
 
@@ -48,8 +54,18 @@ body{
 .container .par h2{
   font-family: "Paytone One";
   font-size: 50px;
+  margin: 50px;
 }
-
+.container .par h2 span{
+  color: #F2C94C;
+}
 .container .par p{
   font-family: "Poppins";
+  margin: 50px;
+  
+}
+
+.container .par h3{
+  font-family: "Paytone One";
+  margin: 50px;
 }
