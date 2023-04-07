@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+body{
+    background: whitesmoke;
+}
+
+.container h1{
+    color: #EBCC70;
+    font-family: "Poppins";
+    margin:30px;
+}
+
+.container h2{
+    font-family: "Poppins";
+    text-align: center;
+}
+
+.container p{
+    font-family: "Poppins";
+    text-align: center;
+    padding:12px 30px
+}
+
+.container p span{
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.container button{
+    background:#CEB556;
+    border-radius: 4px;
+    border:#CEB556;
+    font-family: "poppins";
+    padding: 12px 50px;
+    display: flex;
+    margin: auto;
+}

@@ -77,19 +77,24 @@ body{
   background: rgb(206, 204, 204);
   margin: 50px;
   border-radius: 20px;
-  box-shadow: 10px 10px red;
+  box-shadow: 10px 10px gainsboro;
+  /* margin-top: 10px; */
 }
-
-.container .par .shop img{
+/* .container .par .shop img{
   width: 80px;
   height: 80px;
   border: honeydew;
-}
+} */
 .container .par .shop h4{
   font-family: "poppins";
   margin: 50px;
-  font:bolder;
-  font-weight: 100px;
+  margin-top: 15px;
+
+}
+.container .par .shop p{
+  font-family: "poppins";
+  margin: 50px;
+  margin-top: -40px;
 }
 
 .container .par .shop a{
@@ -97,4 +102,36 @@ body{
   margin: 50px;
   text-decoration: none;
   color: black;
+}
+
+.footer{
+  background: rgb(155, 154, 154);
+}
+.footer h1{
+  font-family: "Poppins";
+  color:#EECB70;
+  margin: 50px;
+  
+}
+.footer h1 span{
+  font-family: "Poppins";
+  color:black;
+  border-left: 2px solid black;
+  height: 50px;
+  position:absolute;
+ font-size:large;
+ font-weight: lighter;
+}
+
+.footer h1 span a{
+  font-size: small;
+  padding: 12px 50px;
+  text-decoration: none;
+  font-family: 'poppins';
+  color: white;
+  font-weight: 100px;
+}
+.footer ul li{
+  margin-left: 240px;
+  list-style-type: none;
 }
