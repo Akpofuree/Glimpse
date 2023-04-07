@@ -36,3 +36,6 @@ body{
     display: flex;
     margin: auto;
 }
+.container button:hover{
+    background: #EBCC70;
+}
