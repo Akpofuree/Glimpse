@@ -91,6 +91,10 @@ body{
   margin-top: 15px;
 
 }
+.container .par .shop:hover{
+  background: #EECB70;
+ 
+}
 .container .par .shop p{
   font-family: "poppins";
   margin: 50px;
