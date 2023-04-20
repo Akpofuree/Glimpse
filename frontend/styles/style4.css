@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body{
+    background: whitesmoke;
+}
+
+.container h1{
+    margin: 30px;
+    font-family: "poppins";
+}
+
+.container .pay p{
+    margin: 10px;
+    font-family: "poppins";
+}
+
+.container .pay h{
+    margin: 50px;
+    
+}

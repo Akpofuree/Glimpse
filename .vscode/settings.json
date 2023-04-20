@@ -1,3 +1,6 @@
 {
-    "livePreview.defaultPreviewPath": "/frontend/index.html"
+    "livePreview.defaultPreviewPath": "/frontend/index.html",
+    "cSpell.words": [
+        "Ebuka"
+    ]
 }
