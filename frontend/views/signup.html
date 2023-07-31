@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glimpse-SignUp</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 
@@ -18,29 +18,29 @@
                 <h2>Create An Account</h2><br>
                 <div>
                     <label>First Name</label>
-                    <input type="text" placeholder="Enter your first name" required /><br>
+                    <input type="text" placeholder="Enter your first name" name="first_name"required /><br>
                 </div>
                 <div>
                     <label>Last Name</label>
-                    <input type="text" placeholder="Enter your lastname" required /><br>
+                    <input type="text" placeholder="Enter your last name"name="last_name" required /><br>
                 </div>
                 <div>
                     <label>Phone Number</label>
-                    <input type="number" placeholder="Enter your phone number" required /><br>
+                    <input type="number" placeholder="Enter your phone number"name="number" required /><br>
                 </div>
                 <div>
                     <label>Email Address</label>
-                    <input type="email" placeholder="Enter your email address"required /><br>
+                    <input type="email" placeholder="Enter your email address" name= "email"required /><br>
                 </div>
                 <div>
                     <label>Password</label>
-                    <input type="password" placeholder="Enter your password" required><br>
+                    <input type="password" placeholder="Enter your password" name="password" required><br>
                 </div>
                 <button type="submit">Create an Account</button><br>
             </form>
         </div>
         <div class="foot">
-            <p>Alreay have account?</p>
+            <p>Already have account?</p>
             <button onclick="window.location.href='login.html';">LOGIN</button>
         </div>
     </div>
