@@ -3,3 +3,6 @@ package-lock.json
 package.json
 node_modules
 .env
+script.js
+okay.py
+okay.js
