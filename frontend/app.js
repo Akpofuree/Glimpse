@@ -5,6 +5,7 @@ const jwt = require("jsonwebtoken");
 const path = require("path");
 const { db } = require("./config/database");
 const userInfo = require("./models/userinfo_model");
+const resetPassword = require("./routes/forgot_password");
 require("dotenv").config();
 
 const app = express();
@@ -13,6 +14,7 @@ const PORT = process.env.PORT;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static(__dirname));
+app.use("./routes/forgot_password", resetPassword);
 //app.use(express.static(path.join(__dirname, "styles")));
 
 // Serve the HTML page
