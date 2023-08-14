@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+*{
+    margin:auto
+}
+
+body{
+    background: whitesmoke;
+}
+
+h1{
+    margin: 30px;
+    font-family: "poppins";
+}
+label{
+    margin: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
