@@ -5,7 +5,7 @@ const router = express.Router();
 const userInfo = require("../models/userinfo_model");
 
 // forgot password request
-router.post("/forgot-password", async (req, res) => {
+router.post("/forgot", async (req, res) => {
   try {
     const user = await userInfo.findOne({ email: req.body.email });
 
