@@ -108,7 +108,10 @@ app.post("/login", async (req, res) => {
 
 app.post("/forget", async (req, res) => {
   try {
-    const user = await userInfo.findOne({ email: req.body, email });
+    const { email } = req.body;
+    console.log("Searching for user:", email);
+    const user = await userInfo.findOne({ email });
+    console.log("User found", user);
     if (!user) {
       return res.status(404).json({ message: "user not found" });
     }
@@ -119,7 +122,7 @@ app.post("/forget", async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: "Gmail",
       auth: {
-        user: "EMAIL@gmail.com",
+        user: "email@gmail.com",
         pass: "password",
       },
     });
@@ -128,7 +131,7 @@ app.post("/forget", async (req, res) => {
       subject: "Password reset",
       html: `
             <p>Password reset</p>
-            <p>Click <a href="http://localhost:3000/auth/reset/${resetToken}">here</a> to reset your password</p>
+            <p>Click <a href="http://localhost:3000/views/reset/${resetToken}">here</a> to reset your password</p>
             `,
     });
     res.json({ message: "Password reset email sent" });
@@ -140,7 +143,7 @@ app.post("/forget", async (req, res) => {
 app.post("/reset/:token", async (req, res) => {
   try {
     const { token } = req.params;
-    const user = await User.findOne({
+    const user = await user.findOne({
       resetToken: token,
       resetTokenExpiration: { $gt: Date.now() },
     });
