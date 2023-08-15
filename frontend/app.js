@@ -120,13 +120,17 @@ app.post("/forget", async (req, res) => {
     user.resetTokenExpiration = Date.now() + 3600000;
     await user.save();
     const transporter = nodemailer.createTransport({
-      service: "Gmail",
+      host: "smtp.gmail.com",
+      port: 465,
+      ignoreTLS: true,
+      secure: true,
       auth: {
         user: "email@gmail.com",
-        pass: "password",
+        pass: "apppassword",
       },
     });
     await transporter.sendMail({
+      from: "email@gmail.com",
       to: user.email,
       subject: "Password reset",
       html: `
