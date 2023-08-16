@@ -7,7 +7,6 @@ const jwt = require("jsonwebtoken");
 const path = require("path");
 const { db } = require("./config/database");
 const userInfo = require("./models/userinfo_model");
-//const resetPassword = require("./routes/forgot_password");
 require("dotenv").config();
 
 const app = express();
@@ -16,8 +15,6 @@ const PORT = process.env.PORT;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static(__dirname));
-//app.use("./routes/forgot_password", resetPassword);
-//app.use(express.static(path.join(__dirname, "styles")));
 
 // Serve the HTML page
 app.get("/", (req, res) => {
@@ -109,7 +106,7 @@ app.post("/login", async (req, res) => {
 app.post("/forget", async (req, res) => {
   try {
     const { email } = req.body;
-    console.log("Searching for user:", email);
+    console.log(`Searching for user: ${email}`);
     const user = await userInfo.findOne({ email });
     console.log("User found", user);
     if (!user) {
@@ -125,12 +122,12 @@ app.post("/forget", async (req, res) => {
       ignoreTLS: true,
       secure: true,
       auth: {
-        user: "email@gmail.com",
-        pass: "apppassword",
+        user: process.env.USER,
+        pass: process.env.PASS,
       },
     });
     await transporter.sendMail({
-      from: "email@gmail.com",
+      from: process.env.USER,
       to: user.email,
       subject: "Password reset",
       html: `
